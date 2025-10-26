@@ -1,0 +1,262 @@
+:root {
+  --brand-navy: #0f2d3a;
+  --brand-navy-700: #123a4b;
+  --brand-red: #ba0000;
+  --brand-red-700: rgb(162, 15, 5) 3;
+  --ink: #1f1f1f;
+  --muted: #666666;
+  --bg: #ffffff;
+  --bg-alt: #fafafa;
+  --border: #e5e5e5;
+}
+body {
+  --brand-navy: #0f2d3a;
+  --brand-navy-700: #123a4b;
+  --brand-red: #ba0000;
+  --brand-red-700: rgb(162, 15, 53);
+  --ink: #1f1f1f;
+  --muted: #666666;
+  --bg: #ffffff;
+  --bg-alt: #fafafa;
+  --border: #e5e5e5;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  color: var(--ink, #1f1f1f);
+  line-height: 1.5;
+  background: var(--bg, #ffffff);
+  padding-top: 64px;
+}
+
+.navbar.navbar-inverse {
+  background: var(--brand-red, #ba0000) !important;
+  border-bottom: 2px solid var(--brand-red, #ba0000);
+  padding: 8px 0;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: var(--bg, #fafafa);
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: var(--brand-red, #ba0000);
+  background: transparent;
+}
+.navbar-brand {
+  padding: 0 15px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+.navbar-text {
+  color: var(--bg, #fafafa);
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.logo-img {
+  padding-top: 10px;
+  max-height: 60px;
+  width: auto;
+  display: block;
+}
+
+.navbar-nav > li > a {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 25px 15px;
+
+  letter-spacing: 0.5px; 
+}
+
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+  color: #ffb300; 
+  background-color: transparent; 
+}
+
+/* Headings */
+h2 {
+  margin: 0 0 12px;
+  border-width: 5px;
+  padding: 10px 10px;
+  background: #ba0000;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: var(--bg, #fafafa);
+}
+.subhead {
+  margin-bottom: 32px;
+  color: var(--muted, #666666);
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+  background: var(--bg, #ffffff);
+}
+.section-alt {
+  background: var(--bg-alt, #fafafa);
+}
+
+/* Cards */
+.cards .card {
+  border: 1px solid var(--border, #e5e5e5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+.cards .card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--brand-navy, #0f2d3a);
+}
+.cards .card p {
+  color: #333;
+}
+
+/* Team */
+.team .member {
+  text-align: center;
+  border: 1px solid var(--border, #e5e5e5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  background: #fff;
+}
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 3px solid var(--brand-red, #ba0000);
+  color: var(--brand-navy, #0f2d3a);
+}
+
+/* Contact */
+.contact-form .form-control {
+  box-shadow: none;
+  border-radius: 8px;
+  border: 1px solid var(--border, #e5e5e5);
+}
+.contact-form .form-control:focus {
+  border-color: var(--brand-navy-700, #123a4b);
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(18, 58, 75, 0.12);
+}
+
+/* Buttons */
+.btn-primary,
+.btn-cta {
+  background: var(--brand-red, #ba0000);
+  border-color: var(--brand-red, #ba0000);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+.btn-primary:hover,
+.btn-cta:hover,
+.btn-primary:focus,
+.btn-cta:focus {
+  background: var(--brand-red-700, #a20f35);
+  border-color: var(--brand-red-700, #a20f35);
+  color: #fff;
+}
+
+/* Links */
+a {
+  color: var(--brand-navy, #0f2d3a);
+}
+a:hover,
+a:focus {
+  color: var(--brand-red, #ba0000);
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  padding: 24px 0;
+  border-top: 2px solid var(--brand-navy, #0f2d3a);
+  background: var(--brand-navy, #0f2d3a);
+  color: var(--bg, #ffff);
+  font-size: 14px;
+}
+
+
+@media (max-width: 480px) {
+  .logo-img {
+    max-height: 32px;
+  }
+  .section {
+    padding: 64px 0;
+  }
+}
+
+/* --- Force brand colors in inverse navbar --- */
+.navbar.navbar-inverse .navbar-nav > li > a,
+.navbar.navbar-inverse .navbar-brand,
+.navbar.navbar-inverse .navbar-text {
+  color: var(--bg, #fafafa) !important;
+}
+.navbar.navbar-inverse .navbar-nav > li > a:hover,
+.navbar.navbar-inverse .navbar-brand:hover,
+.navbar.navbar-inverse .navbar-text:hover,
+.navbar.navbar-inverse .navbar-nav > li > a:focus,
+.navbar.navbar-inverse .navbar-brand:focus {
+  color: var(--brand-navy, #0f2d3a) !important;
+  background: transparent !important;
+}
+
+
+.navbar.navbar-inverse .navbar-nav > .active > a,
+.navbar.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar.navbar-inverse .navbar-nav > .open > a,
+.navbar.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar.navbar-inverse .navbar-nav > .open > a:focus {
+  color: var(--brand-red, #ba0000) !important;
+  background: rgba(0, 0, 0, 0) !important;
+  border-color: transparent !important;
+}
+
+
+.navbar.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: var(--brand-navy, #0f2d3a) !important;
+}
+
+#about {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+#services .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+#services .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#certifications {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
