@@ -235,9 +235,27 @@ a:focus {
 }
 
 
+
+.navbar.navbar-inverse .navbar-toggle {
+  background-color: var(--brand-red, #ba0000) !important;
+  border-color: var(--brand-navy, #0f2d3a) !important;
+}
+
 .navbar.navbar-inverse .navbar-toggle .icon-bar {
   background-color: var(--brand-navy, #0f2d3a) !important;
 }
+
+.navbar.navbar-inverse .navbar-toggle:hover,
+.navbar.navbar-inverse .navbar-toggle:focus {
+  background-color: var(--brand-navy, #0f2d3a) !important;
+  border-color: #ffffff !important;
+}
+
+.navbar.navbar-inverse .navbar-toggle:hover .icon-bar,
+.navbar.navbar-inverse .navbar-toggle:focus .icon-bar {
+  background-color: #ffffff !important;
+}
+
 
 #about {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
